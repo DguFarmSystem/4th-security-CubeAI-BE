@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Getter
+@Table(name = "objective_step")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class ObjectiveStep {
 

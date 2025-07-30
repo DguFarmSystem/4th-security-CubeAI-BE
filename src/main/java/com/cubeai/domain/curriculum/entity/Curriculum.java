@@ -12,6 +12,7 @@ import java.util.List;
 
 @Entity
 @Getter
+@Table(name = "curriculum")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Curriculum extends BaseEntity {
 

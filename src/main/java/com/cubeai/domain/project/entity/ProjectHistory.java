@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Getter
+@Table(name = "project_history")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class ProjectHistory extends BaseEntity {
 
