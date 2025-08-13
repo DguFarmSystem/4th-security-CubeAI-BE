@@ -7,6 +7,7 @@ import com.cubeai.domain.project.dto.request.ProjectCreateRequest;
 import com.cubeai.domain.project.dto.request.ProjectSaveRequest;
 import com.cubeai.domain.project.dto.response.ProjectHistoryListResponse;
 import com.cubeai.domain.project.dto.response.ProjectHistoryResponse;
+import com.cubeai.domain.project.dto.response.ProjectListResponse;
 import com.cubeai.domain.project.dto.response.ProjectResponse;
 import com.cubeai.domain.project.entity.Project;
 import com.cubeai.domain.project.entity.ProjectHistory;
@@ -42,16 +43,20 @@ public class ProjectService {
         return ProjectResponse.from(savedProject);
     }
 
-    public List<ProjectResponse> getProjects(Long memberId) {
+    public List<ProjectListResponse> getProjects(Long memberId) {
         Member member = memberRepository.findByMemberId(memberId)
                 .orElseThrow(() -> new EntityNotFoundException(ErrorCode.MEMBER_NOT_FOUND));
         List<Project> projects = projectRepository.findByMember(member);
         return projects.stream()
-                .map(ProjectResponse::from)
+                .map(ProjectListResponse::from)
                 .collect(Collectors.toList());
     }
 
-
+    public ProjectResponse getProject(Long projectId) {
+        Project project = projectRepository.findByProjectId(projectId)
+                .orElseThrow(() -> new EntityNotFoundException(ErrorCode.PROJECT_NOT_FOUND));
+        return ProjectResponse.from(project);
+    }
 
     @Transactional
     public ProjectHistoryResponse saveProject(Long projectId, ProjectSaveRequest request) {
@@ -71,5 +76,11 @@ public class ProjectService {
         return projectHistories.stream()
                 .map(ProjectHistoryListResponse::from)
                 .collect(Collectors.toList());
+    }
+
+    public ProjectHistoryResponse getProjectHistoryDetail(Long historyId) {
+        ProjectHistory projectHistory = projectHistoryRepository.findByProjectHistoryId(historyId)
+                .orElseThrow(() -> new EntityNotFoundException(ErrorCode.PROJECT_HISTORY_NOT_FOUND));
+        return ProjectHistoryResponse.from(projectHistory);
     }
 }

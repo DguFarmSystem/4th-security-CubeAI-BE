@@ -43,6 +43,7 @@ public enum ErrorCode {
 
     // Project
     PROJECT_NOT_FOUND(HttpStatus.NOT_FOUND, "P001", "프로젝트를 찾을 수 없습니다."),
+    PROJECT_HISTORY_NOT_FOUND(HttpStatus.NOT_FOUND, "P002", "프로젝트 기록을 찾을 수 없습니다."),
     ;
 
     private final HttpStatus httpStatus;
