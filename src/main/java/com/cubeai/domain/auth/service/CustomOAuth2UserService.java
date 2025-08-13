@@ -39,7 +39,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         Member member;
         if (existingMember == null) {
             member = Member.builder()
-                    .oAuthId(oauthId)
+                    .OAuthId(oauthId)
                     .nickname(oAuth2Response.getName())
                     .profileUrl(oAuth2Response.getProfileUrl())
                     .build();

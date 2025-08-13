@@ -23,7 +23,7 @@ public class Member extends BaseEntity {
     private Long memberId;
 
     @Column(length = 50, nullable = false)
-    private String oAuthId;
+    private String OAuthId;
 
     @Column(length = 30)
     private String nickname;
@@ -34,8 +34,8 @@ public class Member extends BaseEntity {
     private LocalDateTime deletedAt;
 
     @Builder
-    public Member(String oAuthId, String nickname, String profileUrl) {
-        this.oAuthId = oAuthId;
+    public Member(String OAuthId, String nickname, String profileUrl) {
+        this.OAuthId = OAuthId;
         this.nickname = nickname;
         this.profileUrl = profileUrl;
     }
