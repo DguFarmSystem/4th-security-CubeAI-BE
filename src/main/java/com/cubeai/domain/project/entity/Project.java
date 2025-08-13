@@ -5,6 +5,7 @@ import com.cubeai.domain.curriculum.entity.Curriculum;
 import com.cubeai.domain.member.entity.Member;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -29,7 +30,15 @@ public class Project extends BaseEntity {
     private Member member;
 
     @ManyToOne(fetch =  FetchType.LAZY)
+    @JoinColumn(name = "curriculum_id")
     private Curriculum curriculum;
+
+    @Builder
+    public Project(String structure, Member member, Curriculum curriculum) {
+        this.structure = structure;
+        this.member = member;
+        this.curriculum = curriculum;
+    }
 
     @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ProjectHistory> projectHistories = new ArrayList<>();

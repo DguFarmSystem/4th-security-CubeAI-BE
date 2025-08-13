@@ -1,8 +1,13 @@
 package com.cubeai.domain.project.service;
 
+import com.cubeai.domain.curriculum.entity.Curriculum;
+import com.cubeai.domain.member.entity.Member;
+import com.cubeai.domain.member.repository.MemberRepository;
+import com.cubeai.domain.project.dto.request.ProjectCreateRequest;
 import com.cubeai.domain.project.dto.request.ProjectSaveRequest;
 import com.cubeai.domain.project.dto.response.ProjectHistoryListResponse;
 import com.cubeai.domain.project.dto.response.ProjectHistoryResponse;
+import com.cubeai.domain.project.dto.response.ProjectResponse;
 import com.cubeai.domain.project.entity.Project;
 import com.cubeai.domain.project.entity.ProjectHistory;
 import com.cubeai.domain.project.repository.ProjectHistoryRepository;
@@ -23,6 +28,30 @@ public class ProjectService {
 
     private final ProjectRepository projectRepository;
     private final ProjectHistoryRepository projectHistoryRepository;
+    private final MemberRepository memberRepository;
+    private final CurriculumRepository curriculumRepository;
+
+    @Transactional
+    public ProjectResponse createProject(Long memberId, ProjectCreateRequest request) {
+        Member member = memberRepository.findByMemberId(memberId)
+                .orElseThrow(() -> new EntityNotFoundException(ErrorCode.MEMBER_NOT_FOUND));
+        Curriculum curriculum = curriculumRepository.findByCurriculumId(request.curriculumId())
+                .orElse(null);
+        Project project = request.toEntity(member, curriculum);
+        Project savedProject = projectRepository.save(project);
+        return ProjectResponse.from(savedProject);
+    }
+
+    public List<ProjectResponse> getProjects(Long memberId) {
+        Member member = memberRepository.findByMemberId(memberId)
+                .orElseThrow(() -> new EntityNotFoundException(ErrorCode.MEMBER_NOT_FOUND));
+        List<Project> projects = projectRepository.findByMember(member);
+        return projects.stream()
+                .map(ProjectResponse::from)
+                .collect(Collectors.toList());
+    }
+
+
 
     @Transactional
     public ProjectHistoryResponse saveProject(Long projectId, ProjectSaveRequest request) {
