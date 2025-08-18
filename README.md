@@ -1,4 +1,16 @@
+
+
 # **Cube AI**
+<img width="1920" height="1080" alt="표지" src="https://github.com/user-attachments/assets/d4d997f3-5a5b-4a92-b455-874dcd034629" />
+<img width="1920" height="1080" alt="기능요약" src="https://github.com/user-attachments/assets/872b663c-c0b5-418e-b2b7-2715fc17836d" />
+<img width="1920" height="1080" alt="기능 1" src="https://github.com/user-attachments/assets/5dbee6ae-a57f-4e53-8ca9-4b0d0b4151b3" />
+<img width="1920" height="1080" alt="기능 2" src="https://github.com/user-attachments/assets/27be28c0-7761-46ff-bf90-969586c68c90" />
+<img width="1920" height="1080" alt="기능 3" src="https://github.com/user-attachments/assets/b2c78555-2d86-4eba-a2ba-b1fd57e6b6f0" />
+
+
+
+
+
 
 A **web-based drag-and-drop platform** for deep learning model training and learning.
 
