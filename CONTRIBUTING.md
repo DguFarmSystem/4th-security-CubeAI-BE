@@ -7,7 +7,7 @@ This document provides guidelines for contributing to the Cube AI repository.
 ## Contributing Guide
 
 For an overview of the project, check out the [README](https://github.com/DguFarmSystem/4th-AI-CubeAI-AI/blob/main/README.md).  
-Cube AI project and everyone participating in this project is governed by the [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md).  
+Cube AI project and everyone participating in this project is governed by the [CODE_OF_CONDUCT](https://github.com/DguFarmSystem/4th-security-CubeAI-BE/blob/main/CODE_OF_CONDUCT.md).  
 
 
 ## How to Contribute
