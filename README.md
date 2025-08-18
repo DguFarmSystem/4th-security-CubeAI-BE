@@ -117,13 +117,6 @@ Cube AI is open source, and contributions are welcome:
 
 👉 See [CONTRIBUTING.md](https://github.com/cubeai/cubeai/blob/main/CONTRIBUTING.md)
 
----
-
-## **License**
-
-This project is licensed under the MIT License.
-
-See [LICENSE](https://github.com/cubeai/cubeai/blob/main/LICENSE) for details.
 
 ---
 
