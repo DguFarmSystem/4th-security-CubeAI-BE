@@ -134,7 +134,7 @@ Cube AI is open source, and contributions are welcome:
 - Feature requests
 - Code improvements & documentation
 
-👉 See [CONTRIBUTING.md](https://github.com/cubeai/cubeai/blob/main/CONTRIBUTING.md)
+👉 See [CONTRIBUTING.md](https://github.com/DguFarmSystem/4th-security-CubeAI-BE/blob/main/CONTRIBUTING.md)
 
 
 ---
