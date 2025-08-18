@@ -58,9 +58,9 @@ This enables users to intuitively understand the structure and concepts of deep 
 
 ### **Requirements**
 
-- Python 3.9+
+- Python 3.10
 - Node.js 18+
-- Docker (optional, for deployment)
+- Docker
 - Git
 
 ### **Installation**
