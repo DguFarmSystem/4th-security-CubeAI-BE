@@ -58,7 +58,7 @@ representative at an online or offline event.
 
 ## Enforcement
 
-Please report issues via [GitHub Issues](https://github.com/DguFarmSystem/4th-AI-CubeAI-AI/issues).
+Please report issues via [GitHub Issues](https://github.com/DguFarmSystem/4th-security-CubeAI-BE/issues).
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
