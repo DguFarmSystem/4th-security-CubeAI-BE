@@ -82,20 +82,20 @@ Then open [http://localhost:3000](http://localhost:3000/) in your browser.
 ## **Development Guide**
 
 ### **Environment**
-	•	Frontend: React, TypeScript, Vite, Tailwind CSS
-	•	Backend: Spring Boot (main API server), FastAPI + LangChain (AI Tutor)
-	•	Database: PostgreSQL + Redis (session/cache), pgvector (vector DB for embeddings)
-	•	AI: PyTorch, Flask, NumPy, Pandas, TorchVision
-	•	Infra: Docker, GitHub Actions (CI/CD), Vercel (frontend deploy)
-	•	Hardware: GPU with CUDA/cuDNN (for model training acceleration, optional)
+- Frontend: React, TypeScript, Vite, Tailwind CSS
+- Backend: Spring Boot (main API server), FastAPI + LangChain (AI Tutor)
+- Database: PostgreSQL + Redis (session/cache), pgvector (vector DB for embeddings)
+- AI: PyTorch, Flask, NumPy, Pandas, TorchVision
+- Infra: Docker, GitHub Actions (CI/CD), Vercel (frontend deploy)
+- Hardware: GPU with CUDA/cuDNN (for model training acceleration, optional)
 
 ### **Structure**
-	•	frontend/ → React + Tailwind CSS + Zustand (UI & state management)
-	•	backend/ → Spring Boot API server (auth, project management)
-	•	ai/ → Flask + PyTorch modules for model training & inference
-	•	tutor/ → FastAPI + LangChain + pgvector (AI tutor, RAG search)
-	•	db/ → PostgreSQL (project/data store), Redis (cache/session), pgvector (vector search)
-	•	devops/ → Docker & CI/CD configs (GitHub Actions, Vercel, deployment scripts)
+- frontend/ → React + Tailwind CSS + Zustand (UI & state management)
+- backend/ → Spring Boot API server (auth, project management)
+- ai/ → Flask + PyTorch modules for model training & inference
+- ai_tutor/ → FastAPI + LangChain + pgvector (AI tutor, RAG search)
+- db/ → PostgreSQL (project/data store), Redis (cache/session), pgvector (vector search)
+- devops/ → Docker & CI/CD configs (GitHub Actions, Vercel, deployment scripts)
 
 ---
 
