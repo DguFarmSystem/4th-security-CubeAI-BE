@@ -1,6 +1,7 @@
 package com.cubeai.domain.project.service;
 
 import com.cubeai.domain.curriculum.entity.Curriculum;
+import com.cubeai.domain.curriculum.repository.CurriculumRepository;
 import com.cubeai.domain.member.entity.Member;
 import com.cubeai.domain.member.repository.MemberRepository;
 import com.cubeai.domain.project.dto.request.ProjectCreateRequest;
