@@ -1,8 +1,8 @@
-package com.cubeai.controller;
+package com.cubeai.domain.curriculum.controller;
 
 import com.cubeai.domain.curriculum.dto.CurriculumResponseDTO;
 import com.cubeai.domain.curriculum.entity.Curriculum;
-import com.cubeai.repository.CurriculumRepository;
+import com.cubeai.domain.curriculum.repository.CurriculumRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
