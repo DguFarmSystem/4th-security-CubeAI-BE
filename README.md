@@ -10,11 +10,11 @@ A **web-based drag-and-drop platform** for deep learning model training and lear
 
 [Project URL](https://4th-security-cube-ai-fe.vercel.app/editor)
 
-[AI Repository](https://github.com/DguFarmSystem/4th-AI-CubeAI-AI)
+[AI Repository](https://github.com/OSS-Cube-AI/CubeAI-AI)
 
-[Frontend Repository](https://github.com/DguFarmSystem/4th-security-CubeAI-FE)
+[Frontend Repository](https://github.com/OSS-Cube-AI/CubeAI-FE)
 
-[Backend Repository](https://github.com/DguFarmSystem/4th-security-CubeAI-BE)
+[Backend Repository](https://github.com/OSS-Cube-AI/CubeAI-BE)
 
 ---
 
@@ -77,7 +77,7 @@ Before running the backend server, make sure the following services are running:
 - **PostgreSQL** (default: `localhost:5432`)
 - **Redis** (default: `localhost:6379`)
 
-You can run them locally or via Docker:
+You can run them locally or via Docker
 
 ### **Installation**
 
