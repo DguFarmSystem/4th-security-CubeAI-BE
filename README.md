@@ -70,6 +70,15 @@ This enables users to intuitively understand the structure and concepts of deep 
 - Docker
 - Git
 
+### **Prerequisites**
+
+Before running the backend server, make sure the following services are running:
+
+- **PostgreSQL** (default: `localhost:5432`)
+- **Redis** (default: `localhost:6379`)
+
+You can run them locally or via Docker:
+
 ### **Installation**
 
 ```bash
