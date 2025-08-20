@@ -2,19 +2,6 @@
 
 # **Cube AI**
 
-<img width="1920" height="1080" alt="표지" src="https://github.com/user-attachments/assets/e9085dbe-4efa-456b-8c06-5c8ebbf75578" />
-
-<img width="1920" height="1080" alt="기능요약" src="https://github.com/user-attachments/assets/0ccdfc74-c809-403b-a248-13b1c3a43448" />
-
-<img width="1920" height="1080" alt="기능 1 (1)" src="https://github.com/user-attachments/assets/9b39f80e-0216-471a-a4a2-a692a88a4033" />
-
-<img width="1920" height="1080" alt="기능 2 (1)" src="https://github.com/user-attachments/assets/7853e472-6b00-4a0d-be27-b4491febddb6" />
-
-<img width="1920" height="1080" alt="기능 3 (1)" src="https://github.com/user-attachments/assets/5f20bab0-e097-4e6f-b035-737cd22a3019" />
-
-
-
-
 
 
 
@@ -77,24 +64,41 @@ This enables users to intuitively understand the structure and concepts of deep 
 
 ### **Requirements**
 
-- Python 3.10
-- Node.js 18+
+- Java 17
+- PostgreSQL
+- Redis
 - Docker
 - Git
 
 ### **Installation**
 
+```bash
+git clone https://github.com/OSS-Cube-AI/CubeAI-BE.git
+cd CubeAI-BE
 ```
 
+### **Configuration**
+
+Copy the example config and update with your environment variables:
+
+```bash
+cp ./src/main/resources/application-example.yml ./src/main/resources/application.yml
 ```
 
 ### **Run**
 
+#### Option 1. Local
+```bash
+./gradlew bootRun
 ```
 
+#### Option2. Build & Run
+```bash
+./gradlew build -x test
+java -jar build/libs/cubeai-be-0.0.1-SNAPSHOT.jar
 ```
 
-Then open [http://localhost:3000](http://localhost:3000/) in your browser.
+Then open [http://localhost:8080](http://localhost:8080/) in your browser.
 
 ---
 
